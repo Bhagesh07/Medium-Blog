@@ -23,7 +23,7 @@ export const useBlog = ({ id }: { id: string }) => {
         },
       })
       .then((response) => {
-        setBlog(response.data.blog); // ✅ FIXED: was blog**s**
+        setBlog(response.data.blog);
         setLoading(false);
       })
       .catch((err) => {
